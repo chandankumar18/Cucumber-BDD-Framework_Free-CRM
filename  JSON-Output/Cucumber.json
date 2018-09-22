@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Free CRM login test functionality",
+        "description": "",
+        "id": "free-crm-login-test;free-crm-login-test-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user is present on Login Page",
+            "match": {
+              "location": "Login_Step_Defination.user_is_present_on_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "title of Login Page is Free CRM",
+            "match": {
+              "location": "Login_Step_Defination.title_of_Login_Page_is_Free_CRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enters username and password",
+            "match": {
+              "location": "Login_Step_Defination.user_enters_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "Login_Step_Defination.user_clicks_on_Login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user is on Home Page",
+            "match": {
+              "location": "Login_Step_Defination.user_is_on_Home_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "close the application and browser",
+            "match": {
+              "location": "Login_Step_Defination.close_the_application_and_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM login test",
+    "description": "",
+    "id": "free-crm-login-test",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]
