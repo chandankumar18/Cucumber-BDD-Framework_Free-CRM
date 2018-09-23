@@ -6,8 +6,8 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "./src/main/java/com/Features/Contacts.feature", // Path of the feature files
-				 glue = {"com.Step_Definations"}, //Path of the step definition files
+@CucumberOptions(features = "./src/main/java/com/Features/Deals.feature", // Path of the feature files
+				 glue = {"com.Step_Definitions"}, //Path of the step definition files
 				 format = {"pretty", "html:test-output", "json: JSON-Output/Cucumber.json", 
 						    "junit: JUNIT-Output/Cucumber.xml"}, // To generate different types of reporting
 				 monochrome = true, // Display the console output in a proper readable format
@@ -17,3 +17,4 @@ import cucumber.api.junit.Cucumber;
 public class Test_Runner {
 
 }
+	
