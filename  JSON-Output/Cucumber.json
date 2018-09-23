@@ -12,7 +12,8 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 31359568122,
+              "status": "passed"
             },
             "line": 5,
             "name": "user is present on Login Page",
@@ -23,7 +24,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 4170408860,
+              "status": "passed"
             },
             "line": 6,
             "name": "title of Login Page is Free CRM",
@@ -34,18 +36,30 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 9499613132,
+              "status": "passed"
             },
             "line": 7,
-            "name": "user enters username and password",
+            "name": "user enters \"chandan4crm\" and \"chandan@crm\"",
             "match": {
-              "location": "Login_Step_Defination.user_enters_username_and_password()"
+              "arguments": [
+                {
+                  "val": "chandan4crm",
+                  "offset": 13
+                },
+                {
+                  "val": "chandan@crm",
+                  "offset": 31
+                }
+              ],
+              "location": "Login_Step_Defination.user_enters_username_and_password(String,String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 16960725361,
+              "status": "passed"
             },
             "line": 8,
             "name": "user clicks on Login button",
@@ -56,7 +70,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 25307484,
+              "status": "passed"
             },
             "line": 9,
             "name": "user is on Home Page",
@@ -67,7 +82,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1679551997,
+              "status": "passed"
             },
             "line": 10,
             "name": "close the application and browser",

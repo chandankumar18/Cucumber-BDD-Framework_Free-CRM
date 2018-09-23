@@ -26,7 +26,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "user enters username and password",
+  "name": "user enters \"chandan4crm\" and \"chandan@crm\"",
   "keyword": "Then "
 });
 formatter.step({
@@ -48,36 +48,52 @@ formatter.match({
   "location": "Login_Step_Defination.user_is_present_on_Login_Page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 31359568122,
+  "status": "passed"
 });
 formatter.match({
   "location": "Login_Step_Defination.title_of_Login_Page_is_Free_CRM()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4170408860,
+  "status": "passed"
 });
 formatter.match({
-  "location": "Login_Step_Defination.user_enters_username_and_password()"
+  "arguments": [
+    {
+      "val": "chandan4crm",
+      "offset": 13
+    },
+    {
+      "val": "chandan@crm",
+      "offset": 31
+    }
+  ],
+  "location": "Login_Step_Defination.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 9499613132,
+  "status": "passed"
 });
 formatter.match({
   "location": "Login_Step_Defination.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 16960725361,
+  "status": "passed"
 });
 formatter.match({
   "location": "Login_Step_Defination.user_is_on_Home_Page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 25307484,
+  "status": "passed"
 });
 formatter.match({
   "location": "Login_Step_Defination.close_the_application_and_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1679551997,
+  "status": "passed"
 });
 });
