@@ -1,28 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="125.743124">
-<testcase classname="Free CRM login test" name="Free CRM login test functionality" time="104.423287">
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="246.146594">
+<testcase classname="Free CRM create contacts test" name="Free CRM new contacs functionality test" time="107.778722">
 <system-out><![CDATA[Given user is present on Login Page.........................................passed
 When title of Login Page is Free CRM........................................passed
-Then user enters "chandan4crm" and "chandan@crm"............................passed
+Then user enters credentials "chandan4crm" and "chandan@crm"................passed
 Then user clicks on Login button............................................passed
 Then user is on Home Page...................................................passed
+Then user moves to new contacts page........................................passed
+And user enters contacts details "Sam", "Desouza" and "L&T".................passed
+And verify that users details successfully added............................passed
 Then close the application and browser......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Free CRM login test" name="Free CRM login test functionality 2" time="21.319837">
-<failure message="junit.framework.ComparisonFailure: expected:&lt;[CRMPRO]&gt; but was:&lt;[#1 Free CRM software in the cloud for sales and service]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at com.Step_Definations.Login_Step_Defination.user_is_on_Home_Page(Login_Step_Defination.java:56)&#13;&#10;&#9;at ✽.Then user is on Home Page(Login.feature:22)&#13;&#10;"><![CDATA[Given user is present on Login Page.........................................passed
+<testcase classname="Free CRM create contacts test" name="Free CRM new contacs functionality test 2" time="44.28524">
+<system-out><![CDATA[Given user is present on Login Page.........................................passed
 When title of Login Page is Free CRM........................................passed
-Then user enters "seleniumcucumber" and "selenium@456"......................passed
+Then user enters credentials "chandan4crm" and "chandan@crm"................passed
+Then user clicks on Login button............................................passed
+Then user is on Home Page...................................................passed
+Then user moves to new contacts page........................................passed
+And user enters contacts details "Rohan", "Sinha" and "Microsoft"...........passed
+And verify that users details successfully added............................passed
+Then close the application and browser......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM create contacts test" name="Free CRM new contacs functionality test 3" time="94.082632">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;[CRMPRO]&gt; but was:&lt;[#1 Free CRM software in the cloud for sales and service]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at com.Step_Definations.Login_Step_Defination.user_is_on_Home_Page(Login_Step_Defination.java:61)&#13;&#10;&#9;at ✽.Then user is on Home Page(./src/main/java/com/Features/Contacts.feature:9)&#13;&#10;"><![CDATA[Given user is present on Login Page.........................................passed
+When title of Login Page is Free CRM........................................passed
+Then user enters credentials "seleniumcucumber" and "selenium@456"..........passed
 Then user clicks on Login button............................................passed
 Then user is on Home Page...................................................failed
+Then user moves to new contacts page........................................skipped
+And user enters contacts details "Sohan", "Dev" and "IBM India Pvt. Ltd."...skipped
+And verify that users details successfully added............................skipped
 Then close the application and browser......................................skipped
 
 StackTrace:
 junit.framework.ComparisonFailure: expected:<[CRMPRO]> but was:<[#1 Free CRM software in the cloud for sales and service]>
 	at junit.framework.Assert.assertEquals(Assert.java:100)
 	at junit.framework.Assert.assertEquals(Assert.java:107)
-	at com.Step_Definations.Login_Step_Defination.user_is_on_Home_Page(Login_Step_Defination.java:56)
-	at ✽.Then user is on Home Page(Login.feature:22)
+	at com.Step_Definations.Login_Step_Defination.user_is_on_Home_Page(Login_Step_Defination.java:61)
+	at ✽.Then user is on Home Page(./src/main/java/com/Features/Contacts.feature:9)
 ]]></failure>
 </testcase>
 </testsuite>
