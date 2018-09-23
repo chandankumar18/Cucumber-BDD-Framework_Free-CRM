@@ -3,19 +3,19 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
+        "line": 27,
         "name": "Free CRM login test functionality",
         "description": "",
-        "id": "free-crm-login-test;free-crm-login-test-functionality",
+        "id": "free-crm-login-test;free-crm-login-test-functionality;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 31359568122,
+              "duration": 74138224992,
               "status": "passed"
             },
-            "line": 5,
+            "line": 18,
             "name": "user is present on Login Page",
             "match": {
               "location": "Login_Step_Defination.user_is_present_on_Login_Page()"
@@ -24,10 +24,10 @@
           },
           {
             "result": {
-              "duration": 4170408860,
+              "duration": 1230981470,
               "status": "passed"
             },
-            "line": 6,
+            "line": 19,
             "name": "title of Login Page is Free CRM",
             "match": {
               "location": "Login_Step_Defination.title_of_Login_Page_is_Free_CRM()"
@@ -36,10 +36,10 @@
           },
           {
             "result": {
-              "duration": 9499613132,
+              "duration": 2831780065,
               "status": "passed"
             },
-            "line": 7,
+            "line": 20,
             "name": "user enters \"chandan4crm\" and \"chandan@crm\"",
             "match": {
               "arguments": [
@@ -54,14 +54,18 @@
               ],
               "location": "Login_Step_Defination.user_enters_username_and_password(String,String)"
             },
+            "matchedColumns": [
+              0,
+              1
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 16960725361,
+              "duration": 24781259746,
               "status": "passed"
             },
-            "line": 8,
+            "line": 21,
             "name": "user clicks on Login button",
             "match": {
               "location": "Login_Step_Defination.user_clicks_on_Login_button()"
@@ -70,10 +74,10 @@
           },
           {
             "result": {
-              "duration": 25307484,
+              "duration": 21497534,
               "status": "passed"
             },
-            "line": 9,
+            "line": 22,
             "name": "user is on Home Page",
             "match": {
               "location": "Login_Step_Defination.user_is_on_Home_Page()"
@@ -82,10 +86,106 @@
           },
           {
             "result": {
-              "duration": 1679551997,
+              "duration": 1419543182,
               "status": "passed"
             },
-            "line": 10,
+            "line": 23,
+            "name": "close the application and browser",
+            "match": {
+              "location": "Login_Step_Defination.close_the_application_and_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Free CRM login test functionality",
+        "description": "",
+        "id": "free-crm-login-test;free-crm-login-test-functionality;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 17537506222,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user is present on Login Page",
+            "match": {
+              "location": "Login_Step_Defination.user_is_present_on_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 112953430,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "title of Login Page is Free CRM",
+            "match": {
+              "location": "Login_Step_Defination.title_of_Login_Page_is_Free_CRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 948134624,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user enters \"seleniumcucumber\" and \"selenium@456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "seleniumcucumber",
+                  "offset": 13
+                },
+                {
+                  "val": "selenium@456",
+                  "offset": 36
+                }
+              ],
+              "location": "Login_Step_Defination.user_enters_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2620125452,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "Login_Step_Defination.user_clicks_on_Login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 101117042,
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003c[CRMPRO]\u003e but was:\u003c[#1 Free CRM software in the cloud for sales and service]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat com.Step_Definations.Login_Step_Defination.user_is_on_Home_Page(Login_Step_Defination.java:56)\r\n\tat ✽.Then user is on Home Page(Login.feature:22)\r\n",
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "user is on Home Page",
+            "match": {
+              "location": "Login_Step_Defination.user_is_on_Home_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
             "name": "close the application and browser",
             "match": {
               "location": "Login_Step_Defination.close_the_application_and_browser()"

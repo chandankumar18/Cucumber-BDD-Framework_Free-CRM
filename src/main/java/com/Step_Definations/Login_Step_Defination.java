@@ -32,7 +32,10 @@ public class Login_Step_Defination {
 		System.out.println("Title of the current page: "+title);
 		Assert.assertEquals("#1 Free CRM software in the cloud for sales and service", title);
 	}
-
+	
+	//Regular Expression: either 1. \"(.*)\" or 2. \"([^\"]*)\"
+	
+	
 	@Then("^user enters \"(.*)\" and \"(.*)\"$")
 	public void user_enters_username_and_password(String userName, String password){
 		driver.findElement(By.name("username")).sendKeys(userName);

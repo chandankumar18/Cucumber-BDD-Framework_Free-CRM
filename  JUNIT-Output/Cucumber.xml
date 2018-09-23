@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="63.695175">
-<testcase classname="Free CRM login test" name="Free CRM login test functionality" time="63.695175">
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="125.743124">
+<testcase classname="Free CRM login test" name="Free CRM login test functionality" time="104.423287">
 <system-out><![CDATA[Given user is present on Login Page.........................................passed
 When title of Login Page is Free CRM........................................passed
 Then user enters "chandan4crm" and "chandan@crm"............................passed
@@ -8,5 +8,21 @@ Then user clicks on Login button............................................pass
 Then user is on Home Page...................................................passed
 Then close the application and browser......................................passed
 ]]></system-out>
+</testcase>
+<testcase classname="Free CRM login test" name="Free CRM login test functionality 2" time="21.319837">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;[CRMPRO]&gt; but was:&lt;[#1 Free CRM software in the cloud for sales and service]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at com.Step_Definations.Login_Step_Defination.user_is_on_Home_Page(Login_Step_Defination.java:56)&#13;&#10;&#9;at ✽.Then user is on Home Page(Login.feature:22)&#13;&#10;"><![CDATA[Given user is present on Login Page.........................................passed
+When title of Login Page is Free CRM........................................passed
+Then user enters "seleniumcucumber" and "selenium@456"......................passed
+Then user clicks on Login button............................................passed
+Then user is on Home Page...................................................failed
+Then close the application and browser......................................skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<[CRMPRO]> but was:<[#1 Free CRM software in the cloud for sales and service]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at com.Step_Definations.Login_Step_Defination.user_is_on_Home_Page(Login_Step_Defination.java:56)
+	at ✽.Then user is on Home Page(Login.feature:22)
+]]></failure>
 </testcase>
 </testsuite>
